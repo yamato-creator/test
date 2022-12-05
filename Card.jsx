@@ -67,12 +67,11 @@ export const Card = () => {
                 </Text>
               </Box>
               <Box display='flex' alignItems='baseline' noOfLines={2} height='16' pb='2'>
+              {portfolio.technology.map((v) => {
                 <Tag borderRadius='full' mb='1' mr='1' px='2' bg={"teal.100"}>
-                Python
+                {v.name}
                 </Tag>
-                <Tag borderRadius='full' mb='1' mr='1' px='2' bg={"teal.100"}>
-                SpringBoot
-                </Tag>
+              })}
               </Box>
               <Box display='flex' alignItems='center'>
                   <AiFillHeart color="#E53E3E"/>
